@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "Theme UI Test 2",
+  "name": "theme-ui-test-2",
   "version": "0.0.1",
   "main": "index.js",
   "author": "Eric Hodges",
@@ -22,7 +22,7 @@
     "@mdx-js/react": "^1.0.0-rc.0",
     "@theme-ui/prism": "^0.4.0-rc.1",
     "@theme-ui/sidenav": "^0.4.0-rc.1",
-    "gatsby": "^2.3.6",
+    "gatsby": "^2.23.12",
     "gatsby-plugin-catch-links": "^2.0.13",
     "gatsby-plugin-compile-es6-packages": "^2.1.0",
     "gatsby-plugin-mdx": "^1.0.4",
