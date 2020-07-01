@@ -23,7 +23,7 @@
     "@theme-ui/prism": "^0.4.0-rc.1",
     "@theme-ui/sidenav": "^0.4.0-rc.1",
     "gatsby": "^2.23.12",
-    "gatsby-plugin-catch-links": "^2.0.13",
+    "gatsby-plugin-catch-links": "^2.3.9",
     "gatsby-plugin-compile-es6-packages": "^2.1.0",
     "gatsby-plugin-mdx": "^1.0.4",
     "gatsby-plugin-react-helmet": "^3.0.12",
