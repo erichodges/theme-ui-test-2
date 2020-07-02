@@ -8,7 +8,7 @@ export default (props) => {
     props.title,
     props.pageContext.frontmatter ? props.pageContext.frontmatter.title : false,
     props._frontmatter ? props._frontmatter.title : false,
-    'Theme UI',
+    'Yoga Sutras',
   ]
     .filter(Boolean)
     .join(' – ')

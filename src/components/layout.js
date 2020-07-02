@@ -6,7 +6,6 @@ import { useRef, useState } from 'react'
 import { jsx, Styled, useColorMode } from 'theme-ui'
 import Sidebar from '../sidebar.mdx'
 import Button from './button'
-import EditLink from './edit-link'
 import Head from './head'
 import MenuButton from './menu-button'
 import NavLink from './nav-link'
@@ -14,12 +13,18 @@ import Pagination from './pagination'
 import SkipLink from './skip-link'
 
 
-const modes = ['default', 'dark', 'deep', 'swiss']
+const modes = ['default', 'dark', 'deep']
 
 const sidebar = {
   wrapper: AccordionNav,
   a: NavLink,
 }
+
+// const buttonBorderStyle = {
+//   *:focus {
+//     outline: 0;
+// }
+// }
 
 const getModeName = (mode) => {
   switch (mode) {
@@ -27,8 +32,6 @@ const getModeName = (mode) => {
       return 'Dark'
     case 'deep':
       return 'Deep'
-    case 'swiss':
-      return 'Swiss'
     case 'default':
       return 'Light'
     default:
@@ -79,17 +82,14 @@ export default (props) => {
                   if (navLink) navLink.focus()
                 }}
               />
-              <Link to="/" sx={{ variant: 'links.nav' }}>
-                Theme UI
+              <Link to="/" sx={{ variant: 'links.nav', fontSize: '1.5rem', fontWeight: 'bold'}}>
+                Yoga Sutras
               </Link>
             </Flex>
             <Flex>
-              <NavLink href="https://github.com/system-ui/theme-ui">
-                GitHub
-              </NavLink>
               <Button
                 sx={{
-                  ml: 2,
+                  mr: 2,
                 }}
                 onClick={cycleMode}>
                 {getModeName(mode)}
@@ -141,7 +141,6 @@ export default (props) => {
                 px: fullwidth ? 0 : 3,
               }}>
               {props.children}
-              <EditLink />
               {!fullwidth && <Pagination />}
             </main>
           </div>
