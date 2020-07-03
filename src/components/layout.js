@@ -20,12 +20,6 @@ const sidebar = {
   a: NavLink,
 }
 
-// const buttonBorderStyle = {
-//   *:focus {
-//     outline: 0;
-// }
-// }
-
 const getModeName = (mode) => {
   switch (mode) {
     case 'dark':
