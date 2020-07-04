@@ -10,9 +10,9 @@ const getHREF = (base, location) => {
 
   if (location.pathname === '/recipes') return `${basePagesHref}/index.js`
 
-  if (location.pathname === '/Chapter-1') return `${basePagesHref}/index.mdx`
+  if (location.pathname === '/guides') return `${basePagesHref}/index.mdx`
 
-  if (location.pathname.startsWith('/Chapter-1/') === false)
+  if (location.pathname.startsWith('/recipes/') === false)
     return `${basePagesHref}.mdx`
 
   return `${base}${sanitizedLocationPathname}.mdx`
