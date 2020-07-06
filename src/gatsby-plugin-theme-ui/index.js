@@ -14,7 +14,7 @@ export default {
     modes: {
       dark: {
         text: '#ccc',
-        background: '#060606',
+        background: '#171923',
         primary: '#33ccff',
         secondary: '#ee00ff',
         muted: '#191919',
@@ -24,7 +24,7 @@ export default {
       },
       deep: {
         text: '#ccc',
-        background: 'hsl(230, 25%, 18%)',
+        background: '#5D2606',
         primary: 'hsl(260, 100%, 80%)',
         secondary: 'hsl(290, 100%, 80%)',
         highlight: 'hsl(260, 20%, 40%)',
@@ -36,7 +36,7 @@ export default {
   },
   fonts: {
     body:
-      'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
+      '-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
     heading: 'inherit',
     monospace: 'Menlo, monospace',
   },
@@ -120,7 +120,7 @@ export default {
       bg: 'transparent',
       transitionProperty: 'background-color',
       transitionTimingFunction: 'ease-out',
-      transitionDuration: '.2s',
+      transitionDuration: '.3s',
       borderRadius: 2,
       '&:hover': {
         bg: 'highlight',
@@ -144,9 +144,9 @@ export default {
       bg: 'accent',
     },
     outline: {
-      color: 'primary',
+      color: 'transparent',
       bg: 'transparent',
-      boxShadow: 'inset 0 0 0 1px',
+      boxShadow: 'inset 0 0 0 0px',
     },
     circle: {
       height: 16,
@@ -244,7 +244,7 @@ export default {
       height: 'auto',
     },
     h1: {
-      variant: 'text.display',
+      variant: 'text.heading',
     },
     h2: {
       variant: 'text.heading',
