@@ -130,12 +130,13 @@ export default (props) => {
               sx={{
                 width: '100%',
                 minWidth: 0,
-                maxWidth: fullwidth ? 'none' : 768,
+                maxWidth: fullwidth ? 'none' : 700,
                 mx: 'auto',
                 px: fullwidth ? 0 : 3,
               }}>
               {props.children}
               {!fullwidth && <Pagination />}
+              <Pagination />
             </main>
           </div>
         </Box>
