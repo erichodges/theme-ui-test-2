@@ -12,7 +12,7 @@ const heading = Tag => props =>
           color: 'inherit',
           textDecoration: 'none',
           ':hover': {
-            textDecoration: 'underline',
+            textDecoration: 'none',
           },
         }}>
         {props.children}
