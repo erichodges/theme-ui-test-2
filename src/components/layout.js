@@ -136,7 +136,6 @@ export default (props) => {
               }}>
               {props.children}
               {!fullwidth && <Pagination />}
-              <Pagination />
             </main>
           </div>
         </Box>

@@ -245,32 +245,43 @@ export default {
     },
     h1: {
       variant: 'text.heading',
+      textDecoration: 'none',
     },
     h2: {
       variant: 'text.heading',
+      textDecoration: 'none',
       fontSize: 5,
     },
     h3: {
       variant: 'text.heading',
+      textDecoration: 'none',
       fontSize: 4,
     },
     h4: {
       variant: 'text.heading',
+      textDecoration: 'none',
       fontSize: 3,
     },
     h5: {
       variant: 'text.heading',
+      textDecoration: 'none',
       fontSize: 2,
     },
     h6: {
       variant: 'text.heading',
+      textDecoration: 'none',
       fontSize: 1,
     },
     a: {
       color: 'primary',
       '&:hover': {
         color: 'secondary',
+        textDecoration: 'none !important',
+        textDecorationLine: 'none !important',
+        textDecorationColor: 'none !important',
+        textDecorationStyle: 'none !important',
       },
+      textDecorationLine: 'none !important',
     },
     pre: {
       fontFamily: 'monospace',
