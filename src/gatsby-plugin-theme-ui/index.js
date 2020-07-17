@@ -282,7 +282,7 @@ export default {
         textDecorationStyle: 'none !important',
       },
       textDecorationLine: 'none !important',
-      padding: '0px 5px 7px 5px',
+      padding: '0px 5px 7px 0px',
     },
     pre: {
       fontFamily: 'monospace',
