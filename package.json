@@ -1,10 +1,11 @@
 {
   "private": true,
-  "name": "theme-ui-test-2",
+  "name": "yoga-sutras-of-patanjali",
   "version": "0.0.1",
   "main": "index.js",
   "author": "Eric Hodges",
   "license": "MIT",
+  "description": "Yoga Sutras of Patanjali, in the tradition of T. Krishnamacharya and T.K.V. Desikachar",
   "scripts": {
     "start": "gatsby develop",
     "build": "gatsby build",
