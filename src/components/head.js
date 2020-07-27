@@ -32,11 +32,6 @@ export default (props) => {
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={pkg.description} />
       <meta name="theme-color" content={theme.colors.background} />
-      <script
-        src="https://unpkg.com/favicon-switcher@1.2.2/dist/index.js"
-        crossOrigin="anonymous"
-        type="application/javascript"
-      />
     </Helmet>
   )
 }
