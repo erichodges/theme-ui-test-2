@@ -1,4 +1,4 @@
-import prism from '@theme-ui/prism/presets/theme-ui'
+import prism from '@theme-ui/prism/presets/theme-ui';
 
 export default {
   colors: {
@@ -185,7 +185,7 @@ export default {
       borderColor: 'gray',
       '&:focus': {
         borderColor: 'primary',
-        boxShadow: t => `0 0 0 2px ${t.colors.primary}`,
+        boxShadow: (t) => `0 0 0 2px ${t.colors.primary}`,
         outline: 'none',
       },
     },
@@ -193,7 +193,7 @@ export default {
       borderColor: 'gray',
       '&:focus': {
         borderColor: 'primary',
-        boxShadow: t => `0 0 0 2px ${t.colors.primary}`,
+        boxShadow: (t) => `0 0 0 2px ${t.colors.primary}`,
         outline: 'none',
       },
     },
@@ -201,7 +201,7 @@ export default {
       borderColor: 'gray',
       '&:focus': {
         borderColor: 'primary',
-        boxShadow: t => `0 0 0 2px ${t.colors.primary}`,
+        boxShadow: (t) => `0 0 0 2px ${t.colors.primary}`,
         outline: 'none',
       },
     },
@@ -348,4 +348,4 @@ export default {
     },
   },
   prism,
-}
+};
