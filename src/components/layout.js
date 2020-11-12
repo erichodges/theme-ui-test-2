@@ -86,7 +86,7 @@ export default (props) => {
                 to="/"
                 sx={{
                   variant: 'links.nav',
-                  fontSize: '1.5rem',
+                  fontSize: '1.2rem',
                   fontWeight: 'bold',
                 }}
               >

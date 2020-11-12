@@ -6,7 +6,7 @@ const Intro = () => (
   <Container sx={{ variant: 'layout.intro' }}>
     <Box sx={{ variant: 'layout.container', marginTop: '-10rem' }}>
       <Box sx={{ variant: 'layout.', textAlign: 'center' }}>
-        <h2 sx={{ variant: 'layout.h2' }}>Yoga Sutras of Patanjali</h2>
+        <h1 sx={{ variant: 'layout.h2' }}>Yoga Sutras of Patanjali</h1>
         <h3 sx={{ variant: 'layout.h3' }}>
           In the tradition of T. Krishnamacharya
         </h3>
