@@ -1,7 +1,9 @@
+/* eslint-disable react/destructuring-assignment */
 /** @jsx jsx */
-import { Container, jsx, ThemeProvider } from 'theme-ui'
+import { Container, jsx, ThemeProvider } from 'theme-ui';
 
-export default props => (
+// eslint-disable-next-line react/display-name
+export default (props) => (
   <ThemeProvider
     theme={{
       styles: {
@@ -20,13 +22,15 @@ export default props => (
           mb: 3,
         },
       },
-    }}>
+    }}
+  >
     <div
       sx={{
         pt: 4,
         pb: 4,
-      }}>
+      }}
+    >
       <Container>{props.children}</Container>
     </div>
   </ThemeProvider>
-)
+);
