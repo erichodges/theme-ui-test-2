@@ -1,53 +1,57 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable react/jsx-pascal-case */
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable react/display-name */
+/* eslint-disable import/no-extraneous-dependencies */
 /** @jsx jsx */
-import { Box, Flex } from '@theme-ui/components'
-import { AccordionNav } from '@theme-ui/sidenav'
-import { Link } from 'gatsby'
-import { useRef, useState } from 'react'
-import { jsx, Styled, useColorMode } from 'theme-ui'
-import Sidebar from '../sidebar.mdx'
-import Button from './button'
-import Head from './head'
-import MenuButton from './menu-button'
-import NavLink from './nav-link'
-import Pagination from './pagination'
-import SkipLink from './skip-link'
+import { Box, Flex } from '@theme-ui/components';
+import { AccordionNav } from '@theme-ui/sidenav';
+import { Link } from 'gatsby';
+import { useRef, useState } from 'react';
+import { jsx, Styled, useColorMode } from 'theme-ui';
+import Sidebar from '../sidebar.mdx';
+import Button from './button';
+import Head from './head';
+import MenuButton from './menu-button';
+import NavLink from './nav-link';
+import Pagination from './pagination';
+import SkipLink from './skip-link';
 
-
-const modes = ['default', 'dark', 'deep']
+const modes = ['default', 'dark', 'deep'];
 
 const sidebar = {
   wrapper: AccordionNav,
   a: NavLink,
-}
+};
 
 const getModeName = (mode) => {
   switch (mode) {
     case 'dark':
-      return 'Dark'
+      return 'Dark';
     case 'deep':
-      return 'Deep'
+      return 'Deep';
     case 'default':
-      return 'Light'
+      return 'Light';
     default:
-      return mode
+      return mode;
   }
-}
+};
 
 export default (props) => {
-  const [menuOpen, setMenuOpen] = useState(false)
-  const nav = useRef(null)
-  const [mode, setMode] = useColorMode()
+  const [menuOpen, setMenuOpen] = useState(false);
+  const nav = useRef(null);
+  const [mode, setMode] = useColorMode();
   const fullwidth =
     (props.pageContext.frontmatter &&
       props.pageContext.frontmatter.fullwidth) ||
-    props.location.pathname === '/home'
-  const showNav = !props.pageContext?.frontmatter?.hidenav
+    props.location.pathname === '/home';
+  const showNav = !props.pageContext?.frontmatter?.hidenav;
 
-  const cycleMode = (e) => {
-    const i = modes.indexOf(mode)
-    const next = modes[(i + 1) % modes.length]
-    setMode(next)
-  }
+  const cycleMode = () => {
+    const i = modes.indexOf(mode);
+    const next = modes[(i + 1) % modes.length];
+    setMode(next);
+  };
 
   return (
     <Styled.root>
@@ -57,7 +61,8 @@ export default (props) => {
         sx={{
           flexDirection: 'column',
           minHeight: '100vh',
-        }}>
+        }}
+      >
         {showNav && (
           <Flex
             as="header"
@@ -66,17 +71,25 @@ export default (props) => {
               px: 3,
               alignItems: 'center',
               justifyContent: 'space-between',
-            }}>
+            }}
+          >
             <Flex sx={{ alignItems: 'center' }}>
               <MenuButton
-                onClick={(e) => {
-                  setMenuOpen(!menuOpen)
-                  if (!nav.current) return
-                  const navLink = nav.current.querySelector('a')
-                  if (navLink) navLink.focus()
+                onClick={() => {
+                  setMenuOpen(!menuOpen);
+                  if (!nav.current) return;
+                  const navLink = nav.current.querySelector('a');
+                  if (navLink) navLink.focus();
                 }}
               />
-              <Link to="/" sx={{ variant: 'links.nav', fontSize: '1.5rem', fontWeight: 'bold'}}>
+              <Link
+                to="/"
+                sx={{
+                  variant: 'links.nav',
+                  fontSize: '1.5rem',
+                  fontWeight: 'bold',
+                }}
+              >
                 Yoga Sutras
               </Link>
             </Flex>
@@ -85,7 +98,8 @@ export default (props) => {
                 sx={{
                   mr: 2,
                 }}
-                onClick={cycleMode}>
+                onClick={cycleMode}
+              >
                 {getModeName(mode)}
               </Button>
             </Flex>
@@ -94,22 +108,25 @@ export default (props) => {
         <Box
           sx={{
             flex: '1 1 auto',
-          }}>
+          }}
+        >
           <div
             sx={{
               display: ['block', 'flex'],
-            }}>
+            }}
+          >
             <div
               ref={nav}
-              onFocus={(e) => {
-                setMenuOpen(true)
+              onFocus={() => {
+                setMenuOpen(true);
               }}
-              onBlur={(e) => {
-                setMenuOpen(false)
+              onBlur={() => {
+                setMenuOpen(false);
               }}
-              onClick={(e) => {
-                setMenuOpen(false)
-              }}>
+              onClick={() => {
+                setMenuOpen(false);
+              }}
+            >
               <Sidebar
                 open={menuOpen}
                 components={sidebar}
@@ -133,8 +150,9 @@ export default (props) => {
                 maxWidth: fullwidth ? 'none' : 700,
                 mx: 'auto',
                 px: fullwidth ? 0 : 3,
-                marginTop: '-.3rem'
-              }}>
+                marginTop: '-.3rem',
+              }}
+            >
               {props.children}
               {!fullwidth && <Pagination />}
             </main>
@@ -142,5 +160,5 @@ export default (props) => {
         </Box>
       </Flex>
     </Styled.root>
-  )
-}
+  );
+};
