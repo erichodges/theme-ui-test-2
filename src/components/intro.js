@@ -11,7 +11,7 @@ const Intro = () => (
           In the tradition of T. Krishnamacharya
         </h3>
         <h3 sx={{ variant: 'layout.h3' }}>and T. K. V. Desikachar</h3>
-        <Link to="/docs/getting-started">
+        <Link to="/Chapter-1/1-1/">
           <Button
             sx={{
               variant: 'layout.button',
