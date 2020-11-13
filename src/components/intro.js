@@ -4,8 +4,10 @@ import { Box, Button, Container, jsx } from 'theme-ui';
 
 const Intro = () => (
   <Container sx={{ variant: 'layout.container' }}>
-    <Box sx={{ variant: 'layout.intro', marginTop: '-10rem' }}>
-      <Box sx={{ variant: 'layout.', textAlign: 'center' }}>
+    <Box sx={{ variant: 'layout.intro' }}>
+      <Box
+        sx={{ variant: 'layout.', textAlign: 'center', marginTop: '-10rem' }}
+      >
         <h1 sx={{ variant: 'layout.h2' }}>Yoga Sutras of Patanjali</h1>
         <h3 sx={{ variant: 'layout.h3' }}>
           In the tradition of T. Krishnamacharya

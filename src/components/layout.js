@@ -44,7 +44,7 @@ export default (props) => {
   const fullwidth =
     (props.pageContext.frontmatter &&
       props.pageContext.frontmatter.fullwidth) ||
-    props.location.pathname === '/home';
+    props.location.pathname === '/';
   const showNav = !props.pageContext?.frontmatter?.hidenav;
 
   const cycleMode = () => {
