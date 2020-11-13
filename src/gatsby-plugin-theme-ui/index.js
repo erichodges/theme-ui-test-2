@@ -2,25 +2,25 @@ import prism from '@theme-ui/prism/presets/theme-ui';
 
 export default {
   colors: {
-    text: '#000000',
-    background: '#f0f0f0',
-    primary: '#0d47a1',
-    secondary: '#1565c0',
-    muted: '#f6f6f6',
-    highlight: '#D9E8F4',
-    gray: '#777777',
-    accent: '#660099',
-    darken: 'rgba(0, 0, 0, .25)',
+    text: '#ccc',
+    background: '#171923',
+    primary: '#33ccff',
+    secondary: '#5ed7ff',
+    muted: '#191919',
+    highlight: '#1E212F',
+    gray: '#999999',
+    accent: '#cc00ff',
     modes: {
-      dark: {
-        text: '#ccc',
-        background: '#171923',
-        primary: '#33ccff',
-        secondary: '#5ed7ff',
-        muted: '#191919',
-        highlight: '#1E212F',
-        gray: '#999999',
-        accent: '#cc00ff',
+      light: {
+        text: '#000000',
+        background: '#f0f0f0',
+        primary: '#0d47a1',
+        secondary: '#1565c0',
+        muted: '#f6f6f6',
+        highlight: '#D9E8F4',
+        gray: '#777777',
+        accent: '#660099',
+        darken: 'rgba(0, 0, 0, .25)',
       },
       deep: {
         text: '#ccc',

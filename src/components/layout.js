@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable react/jsx-pascal-case */
 /* eslint-disable react/destructuring-assignment */
@@ -17,7 +18,7 @@ import NavLink from './nav-link';
 import Pagination from './pagination';
 // import SkipLink from './skip-link';
 
-const modes = ['default', 'dark', 'deep'];
+const modes = ['default', 'deep', 'light'];
 
 const sidebar = {
   wrapper: AccordionNav,
@@ -26,12 +27,12 @@ const sidebar = {
 
 const getModeName = (mode) => {
   switch (mode) {
-    case 'dark':
-      return 'Dark';
+    case 'light':
+      return 'Light';
     case 'deep':
       return 'Deep';
     case 'default':
-      return 'Light';
+      return 'Dark';
     default:
       return mode;
   }
