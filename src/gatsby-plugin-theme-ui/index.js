@@ -53,7 +53,7 @@ export default {
   },
   sizes: {
     sidebar: 256,
-    container: 1024,
+    container: '100vw',
   },
   text: {
     heading: {
@@ -229,16 +229,16 @@ export default {
   layout: {
     container: {
       display: 'grid',
-      placeItems: 'center',
-      height: '90vh',
-      // maxWidth: 1024,
-    },
-    intro: {
-      display: 'grid',
       width: '100vw',
       height: '93vh',
       padding: 0,
       margin: 0,
+      border: 0,
+    },
+    intro: {
+      display: 'grid',
+      placeItems: 'center',
+      // maxWidth: 1024,
     },
     h2: {
       textAlign: 'center',
@@ -256,6 +256,7 @@ export default {
   styles: {
     root: {
       margin: 0,
+      padding: 0,
       fontFamily: 'body',
       lineHeight: 'body',
       fontWeight: 'body',

@@ -3,8 +3,8 @@ import { Link } from 'gatsby';
 import { Box, Button, Container, jsx } from 'theme-ui';
 
 const Intro = () => (
-  <Container sx={{ variant: 'layout.intro' }}>
-    <Box sx={{ variant: 'layout.container', marginTop: '-10rem' }}>
+  <Container sx={{ variant: 'layout.container' }}>
+    <Box sx={{ variant: 'layout.intro', marginTop: '-10rem' }}>
       <Box sx={{ variant: 'layout.', textAlign: 'center' }}>
         <h1 sx={{ variant: 'layout.h2' }}>Yoga Sutras of Patanjali</h1>
         <h3 sx={{ variant: 'layout.h3' }}>

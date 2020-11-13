@@ -15,7 +15,7 @@ import Head from './head';
 import MenuButton from './menu-button';
 import NavLink from './nav-link';
 import Pagination from './pagination';
-import SkipLink from './skip-link';
+// import SkipLink from './skip-link';
 
 const modes = ['default', 'dark', 'deep'];
 
@@ -56,7 +56,6 @@ export default (props) => {
   return (
     <Styled.root>
       <Head {...props} />
-      <SkipLink>Skip to content</SkipLink>
       <Flex
         sx={{
           flexDirection: 'column',
@@ -147,7 +146,7 @@ export default (props) => {
               sx={{
                 width: '100%',
                 minWidth: 0,
-                maxWidth: fullwidth ? 'none' : 700,
+                maxWidth: fullwidth ? 'none' : '100vw',
                 mx: 'auto',
                 px: fullwidth ? 0 : 3,
                 marginTop: '-.3rem',
