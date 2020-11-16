@@ -105,16 +105,8 @@ export default (props) => {
             </Flex>
           </Flex>
         )}
-        <Box
-          sx={{
-            flex: '1 1 auto',
-          }}
-        >
-          <div
-            sx={{
-              display: ['block', 'flex'],
-            }}
-          >
+        <Box sx={{ flex: '1 1 auto' }}>
+          <div sx={{ display: ['block', 'flex'] }}>
             <div
               ref={nav}
               onFocus={() => {
